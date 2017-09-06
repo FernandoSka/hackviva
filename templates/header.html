@@ -1,0 +1,35 @@
+{% load static from staticfiles%}
+<!-- Header ============================================= -->
+  <header id="header" class="full-header">
+
+    <div id="header-wrap">
+
+      <div class="container clearfix">
+
+        <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+        <!-- Logo
+        ============================================= -->
+        <div id="logo">
+          <a href= "{% url 'cms:home' %}" class="standard-logo" data-dark-logo="images/isologo2.png"><img src="{% static "images/isologo2.png" %}" alt="Su logo"></a>
+          <a href= "{% url 'cms:home' %}" class="retina-logo" data-dark-logo="images/isologo2.png"><img src="{% static "images/isologo2.png" %}" alt="Su logo"></a>
+        </div><!-- #logo end -->
+
+        <!-- Primary Navigation
+        ============================================= -->
+        <nav id="primary-menu">
+
+          <ul>
+            <li><a href="{% url 'cms:home' %}"><div>Inicio</div></a></li>
+            <li><a href="/#nosotros"><div>Nosotros</div></a></li>
+            <li><a href="/proyectos"><div>Proyectos</div></a></li>
+            <li><a href="/#contacto"><div>Contacto</div></a></li>
+          </ul>
+
+        </nav><!-- #primary-menu end -->
+
+      </div>
+
+    </div>
+
+  </header><!-- #header end -->
