@@ -1,3 +1,10 @@
-from django.shortcuts import render
+"""CMS Views."""
+from django.views.generic import (
+    TemplateView,
+)
 
-# Create your views here.
+
+class HomeView(TemplateView):
+    """View that shows the first page of the web app."""
+
+    template_name = 'home.html'

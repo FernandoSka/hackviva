@@ -6,4 +6,5 @@ from AgenteI import settings
 
 urlpatterns = [
     url(r'^superI/', admin.site.urls),
+    url(r'^', include('cms.urls', namespace='cms')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
